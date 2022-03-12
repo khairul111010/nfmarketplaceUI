@@ -1,0 +1,256 @@
+body {
+  margin: 1.5em;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  background: black;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../images/hero.jpg");
+  background-size: cover;
+  background-position-x: 20%;
+  background-position-y: 20%;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  -webkit-animation: introLoad 2s forwards;
+          animation: introLoad 2s forwards;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 50vw;
+  z-index: 999;
+  text-transform: uppercase;
+  background: white;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 2em;
+}
+
+nav ul a {
+  font-size: 1rem;
+  color: black;
+  padding: 1em 2.5em;
+  display: inline-block;
+  width: 100%;
+}
+
+nav ul a:hover {
+  background: gray;
+  color: white;
+}
+
+nav .close {
+  margin: 2.5em 1em 3em 1em;
+  width: 2.5em;
+  float: right;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header svg {
+  width: 1.6em;
+  margin-top: -0.6em;
+  cursor: pointer;
+}
+
+section.hero {
+  position: relative;
+  color: white;
+  height: 90vh;
+  -webkit-animation: moveDown 1s ease-in-out forwards;
+          animation: moveDown 1s ease-in-out forwards;
+}
+
+section.hero h1 {
+  font-size: 1.6rem;
+  margin-top: 1.5em;
+  line-height: 1.5em;
+}
+
+section.hero .hero-subhead {
+  font-size: 0.7em;
+}
+
+section.hero .hero-downarrow {
+  stroke: white;
+  position: absolute;
+  width: 0.5em;
+  bottom: -6em;
+  animation: moveArrow 1s alternate-reverse infinite;
+}
+
+section.hero .hero-downarrow path {
+  fill: white;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 3em;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .hamburger-menu {
+    display: none;
+  }
+  nav {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+    color: white;
+    margin-bottom: 1.2em;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  nav ul a {
+    font-size: 1rem;
+    padding: 0.4em 0.5em;
+    margin-right: 0.1em;
+    display: block;
+    color: white;
+    text-align: center;
+  }
+  nav ul a:hover {
+    background: none;
+    text-decoration: underline;
+  }
+  nav .close {
+    display: none;
+  }
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 24em;
+  }
+  section.hero {
+    height: auto;
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .hero-downarrow {
+    width: 0.5em;
+    bottom: 0em;
+  }
+}
+
+@-webkit-keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@-webkit-keyframes moveArrow {
+  from {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes moveArrow {
+  from {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes moveDown {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveDown {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
