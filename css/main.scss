@@ -14,7 +14,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/hero.jpg");
+  background: url("../images/mo-nm8b-BUnzuk-unsplash.jpg");
   background-size: cover;
   background-position-x: 20%;
   background-position-y: 20%;
@@ -99,6 +99,88 @@ section.hero {
   transform: translateX(0);
 }
 
+// Slider
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 80vw;
+  height: 100vh;
+  margin: 8em -1.5em 0em 0em;
+  .controls {
+    button {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 100;
+    }
+    .down-button {
+      transform: translateX(-100%);
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    .up-button {
+      transform: translateY(-100%);
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+
+  button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+    &:hover {
+      color: #222;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .sidebar {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+    div {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-top: -30px;
+      }
+    }
+  }
+  .main-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    transition: transform 0.5s ease-in-out;
+    div {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+// END SLIDER
+
 @media only screen and (min-width: 680px) {
   body {
     margin: 1.5em 3em;
@@ -154,6 +236,9 @@ section.hero {
 }
 
 @media only screen and (min-width: 1200px) {
+  .container {
+    margin-left: 1em;
+  }
   .wrapper {
     width: 1200px;
     margin: 0 auto;
