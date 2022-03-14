@@ -2,7 +2,7 @@ body {
   margin: 1.5em;
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
-  background: black;
+  background: #232323;
 }
 
 a {
@@ -198,9 +198,14 @@ section.hero .hero-downarrow path {
 }
 
 .container .sidebar div h1 {
-  font-size: 40px;
+  font-size: 20px;
   margin-bottom: 10px;
   margin-top: -30px;
+}
+
+.container .sidebar div p {
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 .container .main-slide {
@@ -223,10 +228,218 @@ section.hero .hero-downarrow path {
   width: 100%;
 }
 
+.marketplace .marketplace__wrappperhead {
+  text-align: center;
+  color: white;
+}
+
+.marketplace .marketplace__wrappperhead h1 {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.marketplace .marketplace__wrappper {
+  margin-top: 1.5em;
+}
+
+.marketplace .marketplace__wrappper .card {
+  margin: 16px;
+  background: white;
+  max-width: 400px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 3px 2px 20px 2px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: 3px 2px 20px 2px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 3px 2px 20px 2px rgba(0, 0, 0, 0.46);
+}
+
+.marketplace .marketplace__wrappper .card .card__product-img {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.marketplace .marketplace__wrappper .card .card__product-img img {
+  width: 100%;
+  display: block;
+}
+
+.marketplace .marketplace__wrappper .card .card__body {
+  padding: 10px 0;
+  border-bottom: 1px solid #c5cfdd;
+  margin-bottom: 15px;
+}
+
+.marketplace .marketplace__wrappper .card .card__body .card__title {
+  color: #232323;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.marketplace .marketplace__wrappper .card .card__body .card__text {
+  color: #232323;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.marketplace .marketplace__wrappper .card .card__body .card__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+}
+
+.marketplace .marketplace__wrappper .card .card__body .card__wrapper .card__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+}
+
+.marketplace .marketplace__wrappper .card .card__body .card__wrapper .card__price .card__icon {
+  margin-top: 2px;
+}
+
+.marketplace .marketplace__wrappper .card .card__body .card__wrapper .card__price span {
+  padding-left: 6px;
+}
+
+.marketplace .marketplace__wrappper .card .card__body .card__wrapper .card__countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+}
+
+.marketplace .marketplace__wrappper .card .card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.1em;
+}
+
+.marketplace .marketplace__wrappper .card .card__footer .card__author-img {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--white);
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.marketplace .marketplace__wrappper .card .card__footer .card__author-img .card__author-name {
+  color: var(--blue-yonder);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.marketplace .marketplace__wrappper .card .card__footer .card__buyandlike {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #232323;
+  font-size: 15px;
+  margin: 0 5px 5px 5px;
+  cursor: pointer;
+}
+
+.marketplace .marketplace__wrappper .card .card__footer .card__buyandlike .card__buynow {
+  padding: 3px 5px 3px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.marketplace .marketplace__wrappper .card .card__footer .card__buyandlike .card__buynow:hover {
+  box-shadow: 3px 2px 20px 2px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: 3px 2px 20px 2px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 3px 2px 20px 2px rgba(0, 0, 0, 0.46);
+}
+
+.marketplace .marketplace__wrappper .card .card__footer .card__buyandlike .card__like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.marketplace .marketplace__wrappper .card .card__footer .card__buyandlike .card__like .card__like__span {
+  padding-right: 5px;
+  margin-top: -11px;
+}
+
+.marketplace .marketplace__wrappper .card .card__footer .card__buyandlike .card__like .card__like__img {
+  margin-top: -5px;
+  padding-left: 5px;
+}
+
+.marketplace .marketplace__wrappper .card .card__footer .author__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.marketplace .marketplace__wrappper .card .card__footer .author__div .card__author-img {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.marketplace .marketplace__wrappper .card .card__footer .author__div .card__author-name {
+  color: #232323;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.marketplace .marketplace__wrappper .card .card__footer .author__div .card__author-name a {
+  color: #232323;
+  font-size: 18px;
+}
+
 @media only screen and (min-width: 680px) {
   body {
     margin: 1.5em 3em;
     font-family: "Poppins", sans-serif;
+  }
+  body .marketplace .marketplace__wrappperhead h1 {
+    font-size: 2rem;
   }
 }
 
@@ -276,6 +489,16 @@ section.hero .hero-downarrow path {
     height: auto;
     width: 45%;
   }
+  .marketplace .marketplace__wrappperhead h1 {
+    font-size: 2.5rem;
+  }
+  .marketplace .marketplace__wrappper {
+    display: -ms-grid;
+    display: grid;
+    gap: 16px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -289,6 +512,25 @@ section.hero .hero-downarrow path {
   .hero-downarrow {
     width: 0.5em;
     bottom: 0em;
+  }
+  .marketplace .marketplace__wrappperhead h1 {
+    font-size: 3rem;
+  }
+  .marketplace .marketplace__wrappper {
+    display: -ms-grid;
+    display: grid;
+    gap: 16px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .marketplace .marketplace__wrappper .card {
+    max-width: 350px;
+  }
+  .marketplace .marketplace__wrappper .card .card__body .card__title {
+    font-size: 27px;
+  }
+  .marketplace .marketplace__wrappper .card .card__body .card__text {
+    font-size: 15px;
   }
 }
 
