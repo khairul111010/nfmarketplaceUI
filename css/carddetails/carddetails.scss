@@ -14,7 +14,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/mo-nm8b-BUnzuk-unsplash.jpg");
+  background: url("../../images/pexels-pixabay-161154.jpg");
   background-size: cover;
   background-position-x: 20%;
   background-position-y: 20%;
@@ -327,6 +327,104 @@ section.hero {
         }
       }
     }
+
+    .card__details {
+      width: 80vw;
+      margin: auto;
+      font-size: 20px;
+      .row {
+        // display: flex;
+        .col {
+          //   flex: 1;
+          .tabs {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+            .tab {
+              width: 100%;
+              color: white;
+              overflow: hidden;
+              input {
+                position: absolute;
+                opacity: 0;
+                z-index: -1;
+              }
+              .tab-label {
+                display: flex;
+                justify-content: space-between;
+                padding: 1em;
+                background: #2c3e50;
+                font-weight: bold;
+                cursor: pointer;
+                /* Icon */
+                &:hover {
+                  background: #1a252f;
+                }
+                &:after {
+                  content: "❯";
+                  width: 1em;
+                  height: 1em;
+                  text-align: center;
+                  transition: all 0.35s;
+                }
+              }
+              .tab-content-transaction {
+                max-height: 0;
+                padding: 0em;
+                color: #04090e;
+                background: white;
+                transition: all 0.35s;
+                table {
+                  color: #99a5bd;
+                  width: 100%;
+                  tr {
+                    background-color: #162237;
+                    th {
+                      padding: 15px 20px;
+                      text-align: left;
+                      font-size: 14px;
+                    }
+                    td {
+                      padding: 15px 20px;
+                      text-align: left;
+                      font-size: 14px;
+                      &:nth-of-type(odd) {
+                        border-left: 4px solid #f3ad70;
+                      }
+                      &:nth-of-type(even) {
+                        border-left: 4px solid #6fb39e;
+                      }
+                    }
+                    &:hover {
+                      background-color: #111d32;
+                    }
+                  }
+                }
+              }
+              .tab-content {
+                max-height: 0;
+                // padding: 0 1em;
+                color: #04090e;
+                background: white;
+                transition: all 0.35s;
+              }
+              input:checked {
+                + .tab-label {
+                  background: #1a252f;
+                  &:after {
+                    transform: rotate(90deg);
+                  }
+                }
+                ~ .tab-content {
+                  max-height: 100vh;
+                  padding: 1em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -407,6 +505,12 @@ section.hero {
       display: grid;
       gap: 16px;
       grid-template-columns: repeat(2, 1fr);
+      .card {
+        max-width: 40vw;
+      }
+      .card__details {
+        max-width: 40vw;
+      }
     }
   }
 }
@@ -433,17 +537,21 @@ section.hero {
     .marketplace__wrappper {
       display: grid;
       gap: 16px;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       .card {
-        max-width: 350px;
-        .card__body {
-          .card__title {
-            font-size: 27px;
-          }
-          .card__text {
-            font-size: 15px;
-          }
-        }
+        max-width: 50vw;
+        // .card__body {
+        //   .card__title {
+        //     font-size: 27px;
+        //   }
+        //   .card__text {
+        //     font-size: 15px;
+        //   }
+        // }
+      }
+
+      .card__details {
+        max-width: 50vw;
       }
     }
   }
