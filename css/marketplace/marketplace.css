@@ -15,7 +15,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../../images/pexels-pixabay-161154.jpg");
+  background: url("../../images/pexels-photo-1629236.jpeg");
   background-size: cover;
   background-position-x: 20%;
   background-position-y: 20%;
@@ -665,15 +665,21 @@ section.hero .hero-downarrow path {
   .marketplace .marketplace__wrappper {
     display: -ms-grid;
     display: grid;
-    gap: 16px;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
   .marketplace .marketplace__wrappper .card {
-    max-width: 40vw;
+    max-width: 33vw;
+  }
+  .marketplace .marketplace__wrappper .card .card__body {
+    font-size: 0.5rem;
+  }
+  .marketplace .marketplace__wrappper .card .card__body .card__title {
+    font-size: 1.2rem;
   }
   .marketplace .marketplace__wrappper .card__details {
-    max-width: 40vw;
+    max-width: 33vw;
   }
 }
 
@@ -695,12 +701,22 @@ section.hero .hero-downarrow path {
   .marketplace .marketplace__wrappper {
     display: -ms-grid;
     display: grid;
-    gap: 16px;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
   .marketplace .marketplace__wrappper .card {
-    max-width: 50vw;
+    max-width: 25vw;
+    font-size: 0.3rem;
+  }
+  .marketplace .marketplace__wrappper .card .card__body {
+    font-size: 0.3rem;
+  }
+  .marketplace .marketplace__wrappper .card .card__body .card__title {
+    font-size: 1rem;
+  }
+  .marketplace .marketplace__wrappper .card .card__body .card__wrapper {
+    font-size: 0.9rem;
   }
   .marketplace .marketplace__wrappper .card__details {
     max-width: 50vw;

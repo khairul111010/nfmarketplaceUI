@@ -14,7 +14,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../../images/pexels-pixabay-161154.jpg");
+  background: url("../../images/pexels-photo-1629236.jpeg");
   background-size: cover;
   background-position-x: 20%;
   background-position-y: 20%;
@@ -547,13 +547,20 @@ section.hero {
     }
     .marketplace__wrappper {
       display: grid;
-      gap: 16px;
-      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+      grid-template-columns: repeat(3, 1fr);
       .card {
-        max-width: 40vw;
+        max-width: 33vw;
+        // font-size: 12px;
+        .card__body {
+          font-size: 0.5rem;
+          .card__title {
+            font-size: 1.2rem;
+          }
+        }
       }
       .card__details {
-        max-width: 40vw;
+        max-width: 33vw;
       }
     }
   }
@@ -580,10 +587,20 @@ section.hero {
     }
     .marketplace__wrappper {
       display: grid;
-      gap: 16px;
-      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+      grid-template-columns: repeat(4, 1fr);
       .card {
-        max-width: 50vw;
+        max-width: 25vw;
+        font-size: 0.3rem;
+        .card__body {
+          font-size: 0.3rem;
+          .card__title {
+            font-size: 1rem;
+          }
+          .card__wrapper {
+            font-size: 0.9rem;
+          }
+        }
         // .card__body {
         //   .card__title {
         //     font-size: 27px;
