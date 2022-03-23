@@ -255,6 +255,67 @@ header svg {
   width: 0;
 }
 
+.wallet {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.wallet .wallet__text {
+  padding: 0.3em;
+  background-color: #002041;
+  color: #fff;
+  border-radius: 0.5em;
+}
+.wallet .wallet__address {
+  margin-top: 0.1em;
+  padding: 0.3em;
+  background-color: #002041;
+  color: #fff;
+  border-radius: 0.5em;
+}
+.wallet .wallet__btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0.1em;
+  padding: 0.3em;
+  background-color: #002041;
+  color: #fff;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.wallet .wallet__getbalance,
+.wallet .wallet__gettoken,
+.wallet .wallet__swap {
+  padding: 0.3em;
+  background-color: #fff;
+  color: #002041;
+  border-radius: 0.5em;
+}
+.wallet .wallet__getbalance h5,
+.wallet .wallet__gettoken h5,
+.wallet .wallet__swap h5 {
+  margin: 0;
+}
+.profile__form {
+  padding: 1em;
+  background-color: #002041;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0.8em;
+  text-align: center;
+}
+input {
+  border-radius: 0.8em;
+  padding: 0 6em;
+}
+input[type="submit" i] {
+  padding: 0 2em;
+  border: none;
+  background-color: #fff;
+  color: #002041;
+  font-weight: bold;
+  font-family: inherit;
+}
 @keyframes load {
   0% {
     width: 0;
