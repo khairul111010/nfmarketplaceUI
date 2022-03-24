@@ -240,32 +240,95 @@
                 </div>
               </div>
               <div>
-                <h2>Pool</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  aliquid quasi error, quidem nihil veniam molestiae minima ex
-                  necessitatibus, harum nisi at neque libero possimus expedita
-                  illum. Tempore, quis voluptatem.
-                </p>
-                <p>
-                  Nulla dolore nesciunt et explicabo, sapiente eius veniam rem
-                  iusto doloremque accusamus expedita facere excepturi libero
-                  impedit nobis dignissimos distinctio voluptates aperiam
-                  similique voluptate nihil sint ullam! Iste, tempore fuga.
-                </p>
-                <p>
-                  Minima minus quaerat voluptate nihil cum excepturi suscipit
-                  esse aspernatur deserunt adipisci dignissimos perspiciatis
-                  officia quo ullam totam, ipsa recusandae vitae doloribus
-                  deleniti rerum, praesentium ipsum. Magnam inventore qui alias.
-                </p>
-                <p>
-                  Exercitationem at totam necessitatibus inventore, reiciendis
-                  tenetur incidunt maiores sint animi voluptatem rerum quam.
-                  Excepturi, deserunt voluptatibus reiciendis beatae dolorem
-                  alias incidunt odio cumque molestiae eius tenetur itaque
-                  quasi! Magni.
-                </p>
+                <div class="pool">
+                  <div class="market__cap">
+                    <div class="market__cap__col__1">
+                      <h5>Marketcap</h5>
+                      <h5><span>$123,456,789</span></h5>
+                      <br />
+                      <h5>Total Burned</h5>
+                      <h5>$123,456,789</h5>
+                      <br />
+                      <h5>Farming Profit</h5>
+                      <h5>$123,456,789</h5>
+                      <br />
+                    </div>
+                    <div class="market__cap__col__2">
+                      <h5>XgameX Price <span>(+2.94%)</span></h5>
+                      <h5><span>$123,456,789</span></h5>
+                      <br />
+                      <h5>Liquidity Value</h5>
+                      <h5>$123,456,789</h5>
+                      <br />
+                      <h5>24h Volume</h5>
+                      <h5>$123,456,789</h5>
+                      <br />
+                    </div>
+                    <div class="market__cap__col__3">
+                      <h5>Next Reward</h5>
+                      <h5>1:4:7</h5>
+                      <br />
+                      <h5>Backed Liquidity</h5>
+                      <h5><span>106.05%</span></h5>
+                      <br />
+                      <h5>Total Holder</h5>
+                      <h5>123,456</h5>
+                      <br />
+                    </div>
+                  </div>
+                  <div class="market__Trasery">
+                    <div class="development">
+                      <h5>MarketingDevelopment Treasury</h5>
+                      <h5><span>$123,456,789</span></h5>
+                    </div>
+                    <div class="tresery">
+                      <h5>XgameX Insurance Treasury</h5>
+                      <h5><span>$123,456,789</span></h5>
+                    </div>
+                    <div class="Rewarded">
+                      <h5>Total $XgameX Rewarded</h5>
+                      <h5><span>$123,456,789</span></h5>
+                    </div>
+                  </div>
+                  <div class="estimation">
+                    <h4>Estimation</h4>
+                    <label>XGX Amount</label>
+                    <input
+                      id="inputAmount"
+                      type="number"
+                      placeholder="Amount"
+                      oninput="Converter(this.value)"
+                      onchange="Converter(this.value)"
+                    />
+
+                    <p>
+                      Return XGX Amount : <span id="outputXGXAmount"></span>
+                    </p>
+                    <p>Return USD Amount : $<span id="outputAmount"></span></p>
+                  </div>
+                  <div class="swap">
+                    <h4>Exchange SWAP</h4>
+                    <label>XGX Amount : </label>
+                    <input
+                      id="inputXGXAmount"
+                      type="number"
+                      placeholder="XGX"
+                      value=""
+                      oninput="ConverterBNB(this.value)"
+                      onchange="ConverterBNB(this.value)"
+                    />
+                    <br />
+                    <label>BNB Amount : </label>
+                    <input
+                      id="inputBNBAmount"
+                      type="number"
+                      placeholder="BNB"
+                      value=""
+                      oninput="ConverterXGX(this.value)"
+                      onchange="ConverterXGX(this.value)"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -274,6 +337,17 @@
       <!-- Cards Gallery Marketplace END-->
     </div>
     <script>
+      //convert
+      function Converter(valNum) {
+        document.getElementById("outputXGXAmount").innerHTML = valNum * 1000;
+        document.getElementById("outputAmount").innerHTML = valNum * 10;
+      }
+      function ConverterBNB(valNum) {
+        document.getElementById("inputBNBAmount").value = valNum * 32;
+      }
+      function ConverterXGX(valNum) {
+        document.getElementById("inputXGXAmount").value = valNum * 32;
+      }
       // nav start
       const hamburgermenu = document.querySelectorAll(".hamburger-menu");
       const close = document.querySelectorAll(".close");

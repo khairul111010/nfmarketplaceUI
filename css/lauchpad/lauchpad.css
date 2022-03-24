@@ -316,6 +316,89 @@ input[type="submit" i] {
   font-weight: bold;
   font-family: inherit;
 }
+
+.pool .market__cap {
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
+  display: flex;
+  background-color: #002041;
+  border-radius: 0.5em;
+  color: #fff;
+}
+.pool .market__cap span {
+  color: aqua;
+}
+.pool .market__Trasery {
+  margin: 1em 0 1em 0;
+  text-align: center;
+  font-size: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+.pool .market__Trasery .development,
+.pool .market__Trasery .tresery,
+.pool .market__Trasery .Rewarded {
+  background-color: #002041;
+  border-radius: 0.5em;
+  color: #fff;
+}
+.pool .market__Trasery span {
+  color: aqua;
+}
+.pool .estimation {
+  background-color: #002041;
+  border-radius: 0.5em;
+  color: #fff;
+  font-size: 0.5em;
+  padding: 1.5em;
+  font-weight: bold;
+  /* color: aqua; */
+}
+.pool .estimation input[type="number"] {
+  font-style: inherit;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #222222;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+}
+.pool .estimation h4 {
+  text-align: center;
+}
+.pool .estimation label {
+  margin: 0 20px 0 0;
+}
+.pool .estimation span {
+  margin: 0 0 0 20px;
+  color: aqua;
+}
+.pool .swap {
+  margin: 1em 0 1em 0;
+  background-color: #002041;
+  border-radius: 0.5em;
+  color: #fff;
+  font-size: 0.5em;
+  padding: 1em;
+  font-weight: bold;
+}
+.pool .swap h4 {
+  text-align: center;
+}
+.pool .swap input[type="number"] {
+  font-style: inherit;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #222222;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+}
+
 @keyframes load {
   0% {
     width: 0;
