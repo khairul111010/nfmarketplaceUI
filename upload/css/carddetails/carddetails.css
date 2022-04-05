@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 1.5em;
   font-family: "Poppins", sans-serif;
@@ -14,7 +15,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("../images/mo-nm8b-BUnzuk-unsplash.jpg");
+  background: url("../../images/pexels-pixabay-161154.jpg");
   background-size: cover;
   background-position-x: 20%;
   background-position-y: 20%;
@@ -22,7 +23,7 @@ a {
   height: 100vh;
   z-index: -1;
   -webkit-animation: introLoad 2s forwards;
-  animation: introLoad 2s forwards;
+          animation: introLoad 2s forwards;
 }
 
 nav {
@@ -35,7 +36,7 @@ nav {
   text-transform: uppercase;
   background: white;
   -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
@@ -72,11 +73,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header svg {
@@ -90,7 +91,7 @@ section.hero {
   color: white;
   height: 90vh;
   -webkit-animation: moveDown 1s ease-in-out forwards;
-  animation: moveDown 1s ease-in-out forwards;
+          animation: moveDown 1s ease-in-out forwards;
 }
 
 section.hero h1 {
@@ -117,7 +118,7 @@ section.hero .hero-downarrow path {
 
 .open-nav {
   -webkit-transform: translateX(0);
-  transform: translateX(0);
+          transform: translateX(0);
 }
 
 .container {
@@ -125,7 +126,7 @@ section.hero .hero-downarrow path {
   overflow: hidden;
   width: 80vw;
   height: 100vh;
-  margin: 0 auto;
+  margin: 8em -1.5em 0em 0em;
 }
 
 .container .controls button {
@@ -137,14 +138,14 @@ section.hero .hero-downarrow path {
 
 .container .controls .down-button {
   -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
+          transform: translateX(-100%);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
 .container .controls .up-button {
   -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
+          transform: translateY(-100%);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -186,14 +187,14 @@ section.hero .hero-downarrow path {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fff;
 }
 
@@ -276,23 +277,18 @@ section.hero .hero-downarrow path {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #232323;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__body
-  .card__title
-  .card__physical__tag {
+.marketplace .marketplace__wrappper .card .card__body .card__title .card__physical__tag {
   font-size: 15px;
   background: #eee;
   border-radius: 3px 0 0 3px;
@@ -307,16 +303,11 @@ section.hero .hero-downarrow path {
   -webkit-transition: color 0.2s;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__body
-  .card__title
-  .card__physical__tag:before {
+.marketplace .marketplace__wrappper .card .card__body .card__title .card__physical__tag:before {
   background: #fff;
   border-radius: 10px;
   -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
   content: "";
   height: 6px;
   left: 10px;
@@ -325,12 +316,7 @@ section.hero .hero-downarrow path {
   top: 10px;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__body
-  .card__title
-  .card__physical__tag:after {
+.marketplace .marketplace__wrappper .card .card__body .card__title .card__physical__tag:after {
   background: #fff;
   border-bottom: 13px solid transparent;
   border-left: 10px solid #eee;
@@ -341,22 +327,12 @@ section.hero .hero-downarrow path {
   top: 0;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__body
-  .card__title
-  .card__physical__tag:hover {
+.marketplace .marketplace__wrappper .card .card__body .card__title .card__physical__tag:hover {
   background-color: #002041;
   color: white;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__body
-  .card__title
-  .card__physical__tag:hover:after {
+.marketplace .marketplace__wrappper .card .card__body .card__title .card__physical__tag:hover:after {
   border-left-color: #002041;
 }
 
@@ -372,61 +348,39 @@ section.hero .hero-downarrow path {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 20px;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__body
-  .card__wrapper
-  .card__price {
+.marketplace .marketplace__wrappper .card .card__body .card__wrapper .card__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 500;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__body
-  .card__wrapper
-  .card__price
-  .card__icon {
+.marketplace .marketplace__wrappper .card .card__body .card__wrapper .card__price .card__icon {
   margin-top: 2px;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__body
-  .card__wrapper
-  .card__price
-  span {
+.marketplace .marketplace__wrappper .card .card__body .card__wrapper .card__price span {
   padding-left: 6px;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__body
-  .card__wrapper
-  .card__countdown {
+.marketplace .marketplace__wrappper .card .card__body .card__wrapper .card__countdown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 500;
 }
 
@@ -436,11 +390,11 @@ section.hero .hero-downarrow path {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 0.1em;
 }
 
@@ -452,12 +406,7 @@ section.hero .hero-downarrow path {
   margin-right: 15px;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__footer
-  .card__author-img
-  .card__author-name {
+.marketplace .marketplace__wrappper .card .card__footer .card__author-img .card__author-name {
   color: var(--blue-yonder);
   font-size: 10px;
   font-weight: 500;
@@ -469,72 +418,47 @@ section.hero .hero-downarrow path {
   display: flex;
   width: 100%;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #232323;
   font-size: 15px;
   margin: 0 5px 5px 5px;
   cursor: pointer;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__footer
-  .card__buyandlike
-  .card__buynow {
+.marketplace .marketplace__wrappper .card .card__footer .card__buyandlike .card__buynow {
   padding: 3px 5px 3px;
-  border: 1px solid rgb(95, 95, 95);
-  border-radius: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__footer
-  .card__buyandlike
-  .card__buynow:hover {
-  box-shadow: 0 8px 8px -4px lightblue;
+.marketplace .marketplace__wrappper .card .card__footer .card__buyandlike .card__buynow:hover {
+  box-shadow: 3px 2px 20px 2px rgba(0, 0, 0, 0.46);
+  -webkit-box-shadow: 3px 2px 20px 2px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 3px 2px 20px 2px rgba(0, 0, 0, 0.46);
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__footer
-  .card__buyandlike
-  .card__like {
+.marketplace .marketplace__wrappper .card .card__footer .card__buyandlike .card__like {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__footer
-  .card__buyandlike
-  .card__like
-  .card__like__span {
+.marketplace .marketplace__wrappper .card .card__footer .card__buyandlike .card__like .card__like__span {
   padding-right: 5px;
   margin-top: -11px;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__footer
-  .card__buyandlike
-  .card__like
-  .card__like__img {
+.marketplace .marketplace__wrappper .card .card__footer .card__buyandlike .card__like .card__like__img {
   margin-top: -5px;
   padding-left: 5px;
 }
@@ -544,16 +468,11 @@ section.hero .hero-downarrow path {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__footer
-  .author__div
-  .card__author-img {
+.marketplace .marketplace__wrappper .card .card__footer .author__div .card__author-img {
   width: 20px;
   height: 20px;
   border: 2px solid white;
@@ -561,26 +480,127 @@ section.hero .hero-downarrow path {
   margin-right: 15px;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__footer
-  .author__div
-  .card__author-name {
+.marketplace .marketplace__wrappper .card .card__footer .author__div .card__author-name {
   color: #232323;
   font-size: 15px;
   font-weight: 500;
 }
 
-.marketplace
-  .marketplace__wrappper
-  .card
-  .card__footer
-  .author__div
-  .card__author-name
-  a {
+.marketplace .marketplace__wrappper .card .card__footer .author__div .card__author-name a {
   color: #232323;
   font-size: 18px;
+}
+
+.marketplace .marketplace__wrappper .card__details {
+  width: 80vw;
+  margin: auto;
+  font-size: 20px;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab .tab-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  background: #2c3e50;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab .tab-label:hover {
+  background: #1a252f;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab .tab-label:after {
+  content: "❯";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab .tab-content-transaction table {
+  color: #99a5bd;
+  width: 100%;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab .tab-content-transaction table tr {
+  background-color: #162237;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab .tab-content-transaction table tr th {
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab .tab-content-transaction table tr td {
+  padding: 15px 20px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab .tab-content-transaction table tr td:nth-of-type(odd) {
+  border-left: 4px solid #f3ad70;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab .tab-content-transaction table tr td:nth-of-type(even) {
+  border-left: 4px solid #6fb39e;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab .tab-content-transaction table tr:hover {
+  background-color: #111d32;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab .tab-content {
+  max-height: 0;
+  color: #04090e;
+  background: white;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab input:checked + .tab-label {
+  background: #1a252f;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab input:checked + .tab-label:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+.marketplace .marketplace__wrappper .card__details .row .col .tabs .tab input:checked ~ .tab-content-transaction {
+  max-height: 100vh;
+  padding: 0em;
 }
 
 @media only screen and (min-width: 680px) {
@@ -599,7 +619,7 @@ section.hero .hero-downarrow path {
   }
   nav {
     -webkit-transform: translate(0);
-    transform: translate(0);
+            transform: translate(0);
     position: unset;
     display: block;
     width: auto;
@@ -624,7 +644,6 @@ section.hero .hero-downarrow path {
   }
   nav ul a:hover {
     background: none;
-    /* border: 0 0 3px 0 solid lightblue; */
     text-decoration: underline;
   }
   nav .close {
@@ -647,8 +666,14 @@ section.hero .hero-downarrow path {
     display: -ms-grid;
     display: grid;
     gap: 16px;
-    -ms-grid-columns: (1fr) [2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .marketplace .marketplace__wrappper .card {
+    max-width: 40vw;
+  }
+  .marketplace .marketplace__wrappper .card__details {
+    max-width: 40vw;
   }
 }
 
@@ -671,72 +696,69 @@ section.hero .hero-downarrow path {
     display: -ms-grid;
     display: grid;
     gap: 16px;
-    -ms-grid-columns: (1fr) [3];
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .marketplace .marketplace__wrappper .card {
-    max-width: 350px;
+    max-width: 50vw;
   }
-  .marketplace .marketplace__wrappper .card .card__body .card__title {
-    font-size: 20px;
-  }
-  .marketplace .marketplace__wrappper .card .card__body .card__text {
-    font-size: 15px;
+  .marketplace .marketplace__wrappper .card__details {
+    max-width: 50vw;
   }
 }
 
 @-webkit-keyframes introLoad {
   from {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   to {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 
 @keyframes introLoad {
   from {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   to {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 
 @-webkit-keyframes moveArrow {
   from {
     -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   to {
     -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 @keyframes moveArrow {
   from {
     -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   to {
     -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 @-webkit-keyframes moveDown {
   from {
     -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
+            transform: translateY(-100px);
   }
   to {
     -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 1;
   }
 }
@@ -744,12 +766,12 @@ section.hero .hero-downarrow path {
 @keyframes moveDown {
   from {
     -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
+            transform: translateY(-100px);
   }
   to {
     -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 1;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=carddetails.css.map */

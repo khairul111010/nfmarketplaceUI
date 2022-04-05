@@ -325,12 +325,13 @@ section.hero {
           cursor: pointer;
           .card__buynow {
             padding: 3px 5px 3px;
-            border: 1px solid rgb(95, 95, 95);
-            border-radius: 5px;
+            border: 1px solid black;
+            border-radius: 10px;
             &:hover {
               // color: aqua;
-
-              box-shadow: 0 8px 8px -4px lightblue;
+              box-shadow: 3px 2px 20px 2px rgba(0, 0, 0, 0.46);
+              -webkit-box-shadow: 3px 2px 20px 2px rgba(0, 0, 0, 0.46);
+              -moz-box-shadow: 3px 2px 20px 2px rgba(0, 0, 0, 0.46);
             }
           }
           .card__like {

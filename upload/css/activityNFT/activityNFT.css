@@ -107,7 +107,7 @@ header svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 0.2em;
+  border-radius: 1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -195,7 +195,7 @@ header svg {
   margin: 0.3em 0 0 0;
   padding: 0.5em;
   background-color: #fff;
-  border-radius: 0.2em;
+  border-radius: 1em;
 }
 
 .nft__submit__hold .submtted__nft .submit .transaction h5 {
@@ -586,7 +586,7 @@ section.hero .hero-downarrow path {
     margin: 0.3em 0 0 0;
     padding: 0.5em;
     background-color: #fff;
-    border-radius: 0.2em;
+    border-radius: 1em;
   }
   .nft__submit__hold .submtted__nft .submit .transaction h5 {
     color: #232323;
@@ -702,7 +702,7 @@ section.hero .hero-downarrow path {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-radius: 0.2em;
+    border-radius: 1em;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -780,7 +780,7 @@ section.hero .hero-downarrow path {
     margin: 0.3em 0 0 0;
     padding: 0.5em;
     background-color: #fff;
-    border-radius: 0.2em;
+    border-radius: 1em;
   }
   .wrapper .nft__submit__hold .submtted__nft .submit .transaction h5 {
     color: #232323;
